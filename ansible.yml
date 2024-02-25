@@ -1,0 +1,7 @@
+- host: all
+  become: true
+  tasks:
+    - name: create the deployment 
+      command: kubectl apply -f /home/ubuntu/Deployment.yml
+    - name: create the service 
+      command: kubectl apply -f /home/ubuntu/Service.yml      
