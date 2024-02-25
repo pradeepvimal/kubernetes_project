@@ -4,7 +4,7 @@ metadata:
   name: myapp
 spec:
   replicas: 2
-  selector:   # tell the controller which pods to watch/belong to
+  selector:
     matchLabels:
       app: myapp
   template:
@@ -14,11 +14,8 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: vimalpradeep/pipeline-demo:
+        image: vimalpradeep/pipeline-demo
         imagePullPolicy: Always
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
         - containerPort: 80
+

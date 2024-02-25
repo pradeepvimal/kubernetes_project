@@ -6,9 +6,9 @@ metadata:
     app: myapp
 spec:
   selector:
-    app: myapp    # Apply this servie to anmy pods which has the specific labels
-  type: LoadBalancer    #specify the service type i.e ClusterIP or NodePort
+    app: myapp
+  type: LoadBalancer
   ports:
-  - port: 8080  # Container port exposed
-    targetPort: 80  # Pods port
-    nodePort: 31200 #
+  - port: 8080
+    targetPort: 80
+    nodePort: 31200
