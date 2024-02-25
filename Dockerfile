@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER vikashashoke@gmail.com
+MAINTAINER Pradeep-Vimal
 
 RUN apt-get update && \
     apt-get install -y apache2 zip unzip && \
